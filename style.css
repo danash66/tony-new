@@ -1,34 +1,40 @@
- *{
-	margin: 0;
-	padding: 0;
-	}  
-body{
-	background-color: #EBF4C0;
+  body{
+	background-color: #eee;}
+.wrapper{
+	margin: 0 auto 0 60px;    /* top bottom right left */
+	width: 1000px;
+
 }	
- ul li{
-	list-style: none;
-	display: inline-block;
-	line-height: 30px;
+nav	{                            /* discribes the menu style div is not sutable here */
+	width: 100%;                 /* covering all the width of the page */
+	height: 50px;                /* menu background hight */
+	background-color: #fff;}
+ul{                              /* the style of the website */
+	margin-left :0px;           /* shift all links 60px */
+	
+}	
+ ul li{                         /* the style of the individual site */
+ 	list-style: none;           /* remove dots infront the links*/
+	display: inline-block;      /* put all links in line */
+/*	float: left ;               /* remove gap between links wihout it gap remains */
+	line-height: 50px;          /*  must be the same as the menu background
+	 to keep text centerd in its background */
 	background: #ffda42; 
- }
- ul li a{
- 	display: block;
- 	text-decoration: none;
+    }
+ ul li a{                       /* style of text insidee the links */             
+ 	display: block;             /* make aria above and under link sensitive */
+ 	text-decoration: none;      /*removes the underline */
  	font-size: 14px;
  	font-family: arial;
- 	color: #1e1e1e;  
-	padding: 0 20px;  
+	padding: 0 20px;           /* 0 is beause it is allredy centerd , 20px width for each link */
  } 
  ul li a:hover {
  	color: red;
  }
-#part-2{
-	color: green;
-	text-align: right;
-	font-size: 10px;
-	background: yellow;}
-.part-3{
-	background: gray;
-	text-align:center; 
-	font-size: 50px;
-	color: blue;}
+ #part-2{
+ 	text-align: center;
+ }
+ 
+ .videowrapper{
+ 	position: relative;
+ }
